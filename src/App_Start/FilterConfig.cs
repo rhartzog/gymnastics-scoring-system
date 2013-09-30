@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace GymnasticsScoringSystem
+namespace GSS.UI
 {
     public class FilterConfig
     {

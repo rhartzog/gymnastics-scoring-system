@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DotNetOpenAuth.OpenId.Extensions.AttributeExchange;
 
-namespace GymnasticsScoringSystem.Core.Entities
+namespace GSS.UI.Core.Entities
 {
     public class Meet
     {

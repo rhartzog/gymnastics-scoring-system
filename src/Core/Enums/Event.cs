@@ -1,4 +1,4 @@
-﻿namespace GymnasticsScoringSystem.Core.Enums
+﻿namespace GSS.UI.Core.Enums
 {
     public enum Event
     {

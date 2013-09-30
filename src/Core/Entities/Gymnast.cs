@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GymnasticsScoringSystem.Core.Entities
+namespace GSS.UI.Core.Entities
 {
     public class Gymnast
     {

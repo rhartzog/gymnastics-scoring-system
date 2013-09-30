@@ -9,14 +9,12 @@ using System.Web.Routing;
 using Raven.Client;
 using Raven.Client.Document;
 
-namespace GymnasticsScoringSystem
+namespace GSS.UI
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
     public class MvcApplication : System.Web.HttpApplication
     {
-        public static IDocumentStore DocumentStore { get; private set; }
-
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -25,16 +23,6 @@ namespace GymnasticsScoringSystem
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            AuthConfig.RegisterAuth();
-
-            if (DocumentStore == null)
-            {
-                DocumentStore = new DocumentStore
-                {
-                    Url = "http://localhost:8080",
-                    DefaultDatabase = "GymnasticsScoringSystem"
-                };
-            }
         }
     }
 }

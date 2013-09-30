@@ -1,6 +1,6 @@
-﻿using GymnasticsScoringSystem.Core.Enums;
+﻿using GSS.UI.Core.Enums;
 
-namespace GymnasticsScoringSystem.Core.Entities
+namespace GSS.UI.Core.Entities
 {
     public class EventResult
     {

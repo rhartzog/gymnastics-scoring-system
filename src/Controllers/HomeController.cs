@@ -14,9 +14,9 @@ namespace GymnasticsScoringSystem.Controllers
 
         public ActionResult Index()
         {
-            var meets = _repository<Meet>.Execute();
+            ViewBag.Message = "Here we go";
 
-            return View(meets);
+            return View();
         }
 
         public ActionResult About()

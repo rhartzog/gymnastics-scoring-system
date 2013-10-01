@@ -1,0 +1,13 @@
+﻿@using GSS.UI.Controllers
+@model Meet
+
+@{
+    ViewBag.Title = "Meet";
+}
+
+<h2>Meet @Model.Id</h2>
+@Model.Name<br />
+@Model.StartDate<br />
+@Model.EndDate
+
+@(Html.ActionLink<MeetsController>(c => c.AddGymnast(), "Add Gymnast"))

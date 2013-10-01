@@ -10,9 +10,6 @@
         @Styles.Render("~/Content/css")
         @Styles.Render("~/Content/bootstrap/base")
         @Styles.Render("~/Content/bootstrap/theme")
-        <style>
-            
-        </style>
     </head>
     <body>
         <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
@@ -29,6 +26,7 @@
                 <nav class="collapse navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
                         <li>@(Html.ActionLink<HomeController>(c => c.Index(), "Home"))</li>
+                        <li>@(Html.ActionLink<MeetsController>(c => c.Index(), "Meets"))</li>
                     </ul>
                 </nav>
             </div>

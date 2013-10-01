@@ -1,0 +1,18 @@
+﻿@using Microsoft.Web.Mvc
+@using Microsoft.Web.Mvc.Html
+@model Meet
+
+@{
+    ViewBag.Title = "Add a new meet";
+}
+
+<h2>Add a new meet</h2>
+@{Html.RenderPartial("MeetInputForm");}
+
+@section scripts
+{
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <script>
+        $(".datepicker").datepicker();
+    </script>
+}

@@ -1,0 +1,11 @@
+﻿@model GSS.UI.Core.Entities.Meet
+
+@using(Html.BeginForm())
+{
+    <div>
+        @Html.HiddenFor(x => x.Id)
+        @Html.LabelFor(x => x.Name) @Html.TextBoxFor(x => x.Name)<br />
+        @Html.LabelFor(x => x.StartDate) @Html.TextBoxFor(x => x.StartDate, new{ @class = "datepicker"})<br />
+        <input type="submit" value="Add">
+    </div>
+}

@@ -1,14 +1,16 @@
-﻿@model IList<Meet>
+﻿@using GSS.UI.Controllers
+@using Microsoft.Web.Mvc
+@model IList<Meet>
 
 <!DOCTYPE html>
 
 <html>
     <head>
-        <title>title</title>
+        <title>Home</title>
     </head>
     <body>
         <div>
-              
+              @(Html.ActionLink<MeetsController>(x => x.Index(), "Meets"))
         </div>
     </body>
 </html>

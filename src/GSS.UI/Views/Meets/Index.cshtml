@@ -1,0 +1,15 @@
+﻿@using GSS.UI.Controllers
+@model System.Collections.Generic.List<GSS.UI.Core.Entities.Meet>
+
+@{
+    ViewBag.Title = "Meets";
+}
+
+<h2>Meets</h2>
+@(Html.ActionLink<MeetsController>(c => c.AddMeet(), "Add Meet"))
+<ul>
+    @foreach (var meet in Model)
+    {
+        <li>@(Html.ActionLink<MeetsController>(c => c.AddGymnast(meet.Id), "Add Gymnast"))@meet.Name - @meet.StartDate</li>
+    }
+</ul>
